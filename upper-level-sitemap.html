@@ -1,5 +1,11 @@
 <script type="text/JavaScript">
+  function goToAnchor(anchor) {
+    var loc = document.location.toString().split('#')[0];
+    document.location = loc + '#' + anchor;
+    return false;
+  }
   function unit2A() {
+     goToAnchor('plan-details');
      if ($('#unit-2a>.plan-fill').hasClass('highlight')) {
      } else {
        $('#unit-2a>.plan-fill').addClass('highlight');
@@ -27,6 +33,7 @@
   }
 
   function unit2B() {
+     goToAnchor('plan-details');
      if ($('#unit-2b>.plan-fill').hasClass('highlight')) {
      } else {
        $('#unit-2b>.plan-fill').addClass('highlight');
@@ -54,6 +61,7 @@
   }
 
   function unit2C() {
+     goToAnchor('plan-details');
      if ($('#unit-2c>.plan-fill').hasClass('highlight')) {
      } else {
        $('#unit-2c>.plan-fill').addClass('highlight');
@@ -81,6 +89,7 @@
   }
 
   function unit2D() {
+     goToAnchor('plan-details');
      if ($('#unit-2d>.plan-fill').hasClass('highlight')) {
      } else {
        $('#unit-2d>.plan-fill').addClass('highlight');
@@ -108,6 +117,7 @@
   }
 
   function unit2E() {
+     goToAnchor('plan-details');
      if ($('#unit-2e>.plan-fill').hasClass('highlight')) {
      } else {
        $('#unit-2e>.plan-fill').addClass('highlight');
